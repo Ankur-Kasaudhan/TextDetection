@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D53705"
+    tools:context=".ScannerActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/idTVCaptureImage"/>
+
+    <TextView
+        android:id="@+id/idTVDetectedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTVCaptureImage"
+        android:textAlignment="center"
+        android:text="Your result will be appear here"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFC107"
+        android:layout_marginTop="30sp"
+        android:textSize="18sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/idBtnSnap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDetectedText"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_back"
+        android:backgroundTint="#FFC107"
+        android:textSize="20dp"
+        android:text="Snap"/>
+
+    <Button
+        android:id="@+id/idBtnDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnSnap"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_back"
+        android:backgroundTint="#FFC107"
+        android:textSize="20dp"
+        android:text="Detect"/>
+
+</RelativeLayout>
